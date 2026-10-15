@@ -1,27 +1,27 @@
 @media (min-width: 40.5em) {
-    header {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
+	header {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
 
-    nav {
-        grid-column: auto;
-    }
+	nav {
+		grid-column: auto;
+	}
 
-    nav ul {
-        display: flex;
-        flex-direction: row;
-    }
+	nav ul {
+		display: flex;
+		flex-direction: row;
+	}
 
-    /* Class Selectors */
+	/* Class Selectors */
 
-    .navigation {
-        display: flex;
-    }
+	.navigation {
+		display: flex;
+	}
 
-    /* ID Selectors */
+	/* ID Selectors */
 
-    #menu {
-        display: none;
-    }
+	#menu {
+		display: none;
+	}
 }
