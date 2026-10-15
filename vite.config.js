@@ -9,6 +9,9 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'src/index.html'),
+				compare: resolve(__dirname, 'src/compare.html'),
+				saveload: resolve(__dirname, 'src/saveload.html'),
+				filter: resolve(__dirname, 'src/filter.html'),
 			},
 		},
 	},

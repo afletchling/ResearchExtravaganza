@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Research Extravaganza: Import/Export Page</title>
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/main-medium.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="js/saveload.js" type="module"></script>
+	</head>
+	<body>
+		<header>
+			<span id="header-title">Research Extravaganza</span>
+			<button id="menu" title="Navigation Menu"></button>
+			<nav>
+				<ul class="navigation">
+					<li><a href="/index.html">Search</a></li>
+					<li><a href="/compare.html">Compare</a></li>
+					<li>
+						<a class="active" href="/saveload.html"
+							>Import/Export</a
+						>
+					</li>
+					<li><a href="/filter.html">Filter</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="row">
+			<dialog id="detail-dialog"></dialog>
+			<h1>Import/Export saved data to/from a JSON string.</h1>
+			<input class="wide" type="text" id="input-box" />
+			<button class="wide" id="load-button">Import</button>
+			<button class="wide" id="save-button">Export</button>
+			<div id="card-holder"></div>
+		</main>
+		<footer>
+			<p>Developed by afletchling &copy;2026</p>
+		</footer>
+	</body>
+</html>

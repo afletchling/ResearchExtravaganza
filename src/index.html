@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Research Extravaganza: Home Page</title>
+		<title>Research Extravaganza: Search Page</title>
 		<link rel="stylesheet" href="styles/main.css" />
 		<link rel="stylesheet" href="styles/main-medium.css" />
 		<link
@@ -14,18 +14,28 @@
 	</head>
 	<body>
 		<header>
-			<span id="header-title"> Research Extravaganza </span>
+			<span id="header-title">Research Extravaganza</span>
 			<button id="menu" title="Navigation Menu"></button>
 			<nav>
 				<ul class="navigation">
-					<li><a class="active" href="index.html">Search</a></li>
-					<li><a href="compare.html">Compare</a></li>
-					<li><a href="saveload.html">Import/Export</a></li>
-					<li><a href="filter.html">Filter</a></li>
+					<li><a class="active" href="/index.html">Search</a></li>
+					<li><a href="/compare.html">Compare</a></li>
+					<li><a href="/saveload.html">Import/Export</a></li>
+					<li><a href="/filter.html">Filter</a></li>
 				</ul>
 			</nav>
 		</header>
-		<main></main>
-		<footer></footer>
+		<main class="row">
+			<dialog id="detail-dialog"></dialog>
+			<h1>Search for a specific title name here.</h1>
+			<div>
+				<input type="text" id="search-box" />
+				<button id="submit-button">Search</button>
+			</div>
+			<div id="card-holder"></div>
+		</main>
+		<footer>
+			<p>Developed by afletchling &copy;2026</p>
+		</footer>
 	</body>
 </html>

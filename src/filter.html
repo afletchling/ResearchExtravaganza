@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Research Extravaganza: Filter Page</title>
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/main-medium.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="js/filter.js" type="module"></script>
+	</head>
+	<body>
+		<header>
+			<span id="header-title">Research Extravaganza</span>
+			<button id="menu" title="Navigation Menu"></button>
+			<nav>
+				<ul class="navigation">
+					<li><a href="/index.html">Search</a></li>
+					<li><a href="/compare.html">Compare</a></li>
+					<li><a href="/saveload.html">Import/Export</a></li>
+					<li><a class="active" href="/filter.html">Filter</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="row">
+			<dialog id="detail-dialog"></dialog>
+			<h1>Filter all sources for specific details.</h1>
+			<div>
+				<input type="text" id="search-box" />
+				<select id="filter-type">
+					<option value="source">Source Name</option>
+					<option value="author">Author Name</option>
+					<option value="4star">Rating: 4 stars</option>
+					<option value="3star">Rating: 3 stars</option>
+					<option value="2star">Rating: 2 stars</option>
+					<option value="1star">Rating: 1 star</option>
+					<option value="0star">Rating: 0 stars</option>
+					<option value="b200">Publish Year: Before 2000</option>
+					<option value="a200">Publish Year: After 2000</option>
+					<option value="b201">Publish Year: Before 2010</option>
+					<option value="a201">Publish Year: After 2010</option>
+				</select>
+			</div>
+			<div id="card-holder"></div>
+		</main>
+		<footer>
+			<p>Developed by afletchling &copy;2026</p>
+		</footer>
+	</body>
+</html>

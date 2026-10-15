@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Research Extravaganza: Compare Page</title>
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/main-medium.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="js/compare.js" type="module"></script>
+	</head>
+	<body>
+		<header>
+			<span id="header-title">Research Extravaganza</span>
+			<button id="menu" title="Navigation Menu"></button>
+			<nav>
+				<ul class="navigation">
+					<li><a href="/index.html">Search</a></li>
+					<li><a class="active" href="/compare.html">Compare</a></li>
+					<li><a href="/saveload.html">Import/Export</a></li>
+					<li><a href="/filter.html">Filter</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="row">
+			<h1>Compare two data sources side by side with each other.</h1>
+			<div id="compare-holder">
+				<section>
+					<h2>Section A</h2>
+					<div>
+						<input type="text" id="search-box" />
+					</div>
+					<div class="hidden" id="compare-view"></div>
+					<div id="card-compare-holder"></div>
+				</section>
+				<section>
+					<h2>Section B</h2>
+					<div>
+						<input type="text" id="search-box" />
+					</div>
+					<div class="hidden" id="compare-view"></div>
+					<div id="card-compare-holder"></div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<p>Developed by afletchling &copy;2026</p>
+		</footer>
+	</body>
+</html>
